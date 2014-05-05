@@ -6,7 +6,9 @@ var user = {
     "lastname":"Guo",
     "age":20
 }
-
-var userYinfeng = JSON.stringify(user);
-
-console.log('user::'+userYinfeng);
+var user1 = JSON.stringify(user);
+var user2 = JSON.stringify(user, ["firstname","age","test"]);
+var user3 = JSON.stringify(user, ["firstname","age"], "  ");
+console.log('user::'+user1);
+console.log('user::'+user2);
+console.log('user::'+user3);
